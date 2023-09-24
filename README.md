@@ -48,7 +48,7 @@ Welcome to my NixOS Mobile Configuration! This repository represents my personal
 fastboot erase dtbo_a
 fastboot erase dtbo_b
 ```
-2. building imgaes
+2. building image
 
 - clone this repo with `git clone git@github.com:0xKyran/nixos-mobile.git`
 - Allow unfree and insecure packages with:
@@ -60,6 +60,7 @@ export NIXPKGS_ALLOW_INSECURE=1
 - cd into the `result` directory
 - run `./flash-critical.sh` to flash the boot image
 - run `fastboot flash userdata system.img` to flash the system image
+- run `fastboot reboot` to reboot your phone into NixOS
 
 ## aws-server
 
