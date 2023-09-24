@@ -11,13 +11,13 @@ in
     ./phosh.nix
     ./common-configuration.nix
     ./zsh.nix
-    # ./password.nix
   ];
 
   config = {
     users.users."${defaultUserName}" = {
       isNormalUser = true;
       shell = pkgs.zsh;
+      password = "1234";
       extraGroups = [
         "dialout"
         "feedbackd"
